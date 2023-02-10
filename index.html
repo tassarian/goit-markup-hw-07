@@ -11,40 +11,40 @@
     rel="stylesheet" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/main.min.css">
   <title>Web Studio</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="container header-container">
-      <nav class="navigation">
-        <a class="logo-header link" href="./index.html"><span class="web">Web</span>Studio</a>
-        <ul class="list">
-          <li class="nav-li">
-            <a class="nav-link link current" href="./index.html">Студія</a>
+    <div class="container header__container">
+      <nav class="header__navigation">
+        <a class="header__nav--logo link" href="./index.html"><span class="header__logo--accent">Web</span>Studio</a>
+        <ul class="header__nav--list list">
+          <li class="header__nav--item">
+            <a class="header__nav--link link header__nav--current" href="./index.html">Студія</a>
           </li>
-          <li class="nav-li">
-            <a class="nav-link link" href="./portfolio.html">Портфоліо</a>
+          <li class="header__nav--item">
+            <a class="header__nav--link link" href="./portfolio.html">Портфоліо</a>
           </li>
-          <li class="nav-li">
-            <a class="nav-link link" href="">Контакти</a>
+          <li class="header__nav--item">
+            <a class="header__nav--link link" href="">Контакти</a>
           </li>
         </ul>
       </nav>
 
-      <ul class="contacts list">
-        <li class="contacts-item">
-          <a class="link" href="mailto:info@devstudio.com">
-            <svg class="icon" width="16" height="12">
+      <ul class="header__contacts list">
+        <li class="header__contacts--item">
+          <a class="header__contacts--link link" href="mailto:info@devstudio.com">
+            <svg class="header__contacts--icon" width="16" height="12">
               <use href="./images/symbol-defs.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a>
         </li>
-        <li class="contacts-item">
-          <a class="link" href="tel:+380961111111">
-            <svg class="icon" width="10" height="16">
-              <use class="icon" href="./images/symbol-defs.svg#icon-smartphone"></use>
+        <li class="header__contacts--item">
+          <a class="header__contacts--link link" href="tel:+380961111111">
+            <svg class="header__contacts--icon" width="10" height="16">
+              <use class="" href="./images/symbol-defs.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11</a>
         </li>
@@ -52,43 +52,43 @@
     </div>
   </header>
   <main>
-    <section class="hero">
+    <section class="section__hero">
       <div class="container">
-        <h1 class="title">
+        <h1 class="section__hero--title title">
           Ефективні рішення для <br />
           вашого бізнесу
         </h1>
-        <button class="hero-button" data-modal-open type="button">Замовити послугу</button>
+        <button class="section__hero--button" data-modal-open type="button">Замовити послугу</button>
       </div>
     </section>
-    <section class="feature section">
+    <section class="section__feature section">
       <div class="container">
-        <h2 class="title visually-hidden">Наші Особливості</h2>
-        <ul class="list">
-          <li class="item item-one">
-            <h3 class="name">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="text">
+        <h2 class="feature__title title visually-hidden">Наші Особливості</h2>
+        <ul class="feature__list list">
+          <li class="feature__item feature__item--one">
+            <h3 class="feature__item--name">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="feature__item--description">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування <br />
               позиції.
             </p>
           </li>
-          <li class="item item-two">
-            <h3 class="name">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="text">
+          <li class="feature__item feature__item--two">
+            <h3 class="feature__item--name">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="feature__item--description">
               Завдання організації, особливо рамки і місце навчання кадрів
               тягне у себе.
             </p>
           </li>
-          <li class="item item-three">
-            <h3 class="name">ПЛАНУВАННЯ</h3>
-            <p class="text">
+          <li class="feature__item feature__item--three">
+            <h3 class="feature__item--name">ПЛАНУВАННЯ</h3>
+            <p class="feature__item--description">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li class="item item-four">
-            <h3 class="name">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="text">
+          <li class="feature__item feature__item--four">
+            <h3 class="feature__item--name">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="feature__item--description">
               Значимість цих проблем настільки очевидна, що реалізація
               планових <br />
               завдань.
@@ -97,26 +97,26 @@
         </ul>
       </div>
     </section>
-    <section class="employment section">
+    <section class="section__employment section">
       <div class="container">
-        <h2 class="title">Чим ми займаємося</h2>
-        <ul class="list">
-          <li class="item">
-            <div class="image-box">
-              <img class="image" src="./images/img1.jpg" alt="img1" width="370" />
-              <p class="image-description">Десктопні додатки</p>
+        <h2 class="employment__title title">Чим ми займаємося</h2>
+        <ul class="employment__list list">
+          <li class="employment__item">
+            <div class="employment__item--image-box">
+              <img class="employment__item--image" src="./images/img1.jpg" alt="img1" width="370" />
+              <p class="employment__item--description">Десктопні додатки</p>
             </div>
           </li>
           <li class="item">
-            <div class="image-box">
-              <img class="image" src="./images/img2.jpg" alt="img2" width="370" />
-              <p class="image-description">Мобільні додатки</p>
+            <div class="employment__item--image-box">
+              <img class="employment__item--image" src="./images/img2.jpg" alt="img2" width="370" />
+              <p class="employment__item--description">Мобільні додатки</p>
             </div>
           </li>
           <li class="item">
-            <div class="image-box">
-              <img class="image" src="./images/img3.jpg" alt="img3" width="370" />
-              <p class="image-description">Дизайнерські рішення</p>
+            <div class="employment__item--image-box">
+              <img class="employment__item--image" src="./images/img3.jpg" alt="img3" width="370" />
+              <p class="employment__item--description">Дизайнерські рішення</p>
             </div>
           </li>
         </ul>
@@ -351,28 +351,28 @@
         <p class="social-title">приєднуйтесь</p>
         <ul class="list">
           <li class="item">
-            <a class="link" target="_blank" rel="noreferrer, noopener" href="">
+            <a class="link" target="_blank" rel="noreferrer, noopener" href="https://www.instagram.com/">
               <svg class="icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="item">
-            <a class="link" target="_blank" rel="noreferrer, noopener" href="">
+            <a class="link" target="_blank" rel="noreferrer, noopener" href="https://www.twitter.com/">
               <svg class="icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="item">
-            <a class="link" target="_blank" rel="noreferrer, noopener" href="">
+            <a class="link" target="_blank" rel="noreferrer, noopener" href="https://www.facebook.com/">
               <svg class="icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="item">
-            <a class="link" target="_blank" rel="noreferrer, noopener" href="">
+            <a class="link" target="_blank" rel="noreferrer, noopener" href="https://linkedin.com/">
               <svg class="icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
               </svg>
