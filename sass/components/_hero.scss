@@ -13,7 +13,7 @@
 
   text-align: center;
 }
-.section__hero--title {
+.section__hero-title {
   /* font */
   font-weight: 900;
   font-size: 44px;
@@ -27,7 +27,7 @@
   text-transform: uppercase;
 }
 
-.section__hero--button {
+.section__hero-button {
   /* color */
   color: var(--third-text-color);
   background-color: var(--project-color);
@@ -51,9 +51,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0ms;
 }
-.section__hero--button:hover,
-.section__hero--button:focus {
-  /* color */
+.section__hero-button,
+.section__hero-button {
+  
+  &:hover,
+  &:focus {
+     /* color */
   background-color: var(--second-accent-color);
   color: var(--third-text-color);
+  }
 }

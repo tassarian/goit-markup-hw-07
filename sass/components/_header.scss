@@ -16,7 +16,7 @@
 }
 
 /* /header-logo/ */
-.header__nav--logo {
+.header__nav-logo {
   /* font */
   font-family: $font-raleway;
   font-weight: 700;
@@ -41,14 +41,14 @@
   display: flex;
   align-items: center;
 }
-.header__nav--item {
+.header__nav-item {
   transition-property: background-color, box-shadow, color, fill, border-color;
   transition-duration: cubic-bezier(0.4, 0, 0.2);
   transition-delay: 0ms;
   transition-duration: 250ms;
 }
 
-.header__nav--link {
+.header__nav-link {
   position: relative;
   /* font */
   font-weight: bold;
@@ -72,29 +72,41 @@
   transition-delay: 0ms;
 }
 
-.header__nav--list {
+.header__nav-list {
   display: flex;
   padding-left: 0;
   margin-left: 93px;
   margin-bottom: 0px;
   margin-top: 0px;
 }
-.header__nav--item:not(:last-child) {
-  margin-right: 50px;
+.header__nav-item {
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+  
 }
 
-.header__nav--link:hover,
-.header__nav--link:focus,
-.header__nav--link:active {
-  /* color */
+.header__nav-link,
+.header__nav-link,
+.header__nav-link {
+
+  &:hover,
+  &:focus,
+  &:active {
+    /* color */
   color: var(--project-color);
+  }
+  
 }
 .header__nav--current {
   position: relativ;
   color: var(--project-color);
 }
-.header__nav--current::after {
-  position: absolute;
+.header__nav--current {
+
+  &::after {
+    position: absolute;
   bottom: 0px;
   left: 0px;
   content: '';
@@ -102,11 +114,13 @@
   height: 4px;
   background-color: var(--project-color);
   border-radius: 2px;
+  }
 }
+  
 
 /* header-contacts */
 
-.header__contacts--link {
+.header__contacts-link {
   /* font */
   font-weight: 500;
   line-height: 1.2;
@@ -129,7 +143,7 @@
   align-items: center;
 }
 
-.header__contacts--item {
+.header__contacts-item {
   box-sizing: border-box;
 }
 
@@ -138,24 +152,35 @@
   padding: 0;
 }
 
-.header__contacts--item:not(:last-child) {
-  margin-right: 50px;
+.header__contacts-item {
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+  
 }
 
-.header__contacts--link:hover,
-.header__contacts--link:focus,
-.header__contacts--link:hover .header__contacts--icon,
-.header__contacts--link:focus .header__contacts--icon {
-  color: var(--project-color);
-  fill: var(--project-color);
+.header__contacts-link,
+.header__contacts-link,
+.header__contacts-link,
+.header__contacts-link {
+
+  &:hover,
+  &:focus,
+  &:hover .header__contacts-icon,
+  &:focus .header__contacts-icon {
+    color: var(--project-color);
+    fill: var(--project-color);
+  }
+
 }
 
-.header__contacts--link {
+.header__contacts-link {
   display: flex;
   align-items: center;
 }
 
-.header__contacts--icon {
+.header__contacts-icon {
   fill: var(--second-text-color);
 
   margin-right: 10px;
